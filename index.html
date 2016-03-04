@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles.css" media="screen" charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div name="top" id="content_wrapper">
+    <main id="main">
+      <div class="nav_wrapper nav_top">
+        <a class="box hello_nav" href="#">hello</a>
+        <a class="box work_nav smoothScroll" href="#work">Work</a>
+      </div>
+      <div class="sticky logo_wrapper">
+        <div class="box1">
+          <img class="logo_image" src="https://farm2.staticflickr.com/1711/25059228369_c3a37d1a19_o.png" alt="LLL" />
+        </div>
+        <div class="box2">
+          <h1>Lauren L Lamborne</h1>
+          <h2>Front-End Developer</h2>
+        </div>
+      </div>
+      <div class="nav_wrapper nav_bottom">
+        <a class="box contact_nav" href="#">Contact</a>
+        <a class="box about_nav" href="#">About</a>
+      </div>
+    </main>
+    <div id="content_container">
+      <section id="work" class="right_column_init">
+        <div class="featured_work">
+          <div class="featured_header">
+            <h3 class="featured_header_text right">Featured Work</h3>
+            <a class="smoothScroll" href="#top">^UP</a>
+          </div>
+          <div class="feat-wrap">
+            <div class="featured_wrapper feat_1">
+              <div class="feat-img img_1">
+              </div>
+              <!-- <div class="image_wrapper">
+              <a href="#">
+              <img class="featured_img" src="https://farm2.staticflickr.com/1455/25151453690_d5cba3c3e4_o.png" alt="latonya yvette blog" />
+            </a>
+          </div> -->
+        </div>
+        <div class="featured_wrapper feat_2">
+          <div class="feat-img img_2">
+          </div>
+        </div>
+        <div class="featured_wrapper feat_3">
+          <div class="feat-img img_3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+</script>
+<script type="text/javascript">
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 706) {
+    $('.sticky').addClass('fixed');
+  }
+  else {
+    $('.sticky').removeClass('fixed');
+  }
+  if ($(window).scrollTop() >= 706) {
+    $('.sticky').addClass('fade-in');
+  }
+  else {
+    $('.sticky').removeClass('fade-in');
+  }
+});
+</script>
+</body>
+</html>
