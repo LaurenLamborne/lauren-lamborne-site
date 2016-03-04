@@ -124,22 +124,22 @@ margin-right: auto;
 @keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 
 .fade-in {
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn ease-in 1;
-    animation:fadeIn ease-in 1;
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
 
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
 
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
 
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 
 .featured_work {
@@ -181,24 +181,24 @@ margin-right: auto;
 }
 .featured_wrapper {
   width: 100%;
-      text-align: center;
-      margin-bottom: 2%;
-      height: 25em;
-      margin-top: 2%;
-    }
+  text-align: center;
+  margin-bottom: 2%;
+  height: 25em;
+  margin-top: 2%;
+}
 /*.image_wrapper {
-  width: 100%;
+width: 100%;
 }*/
 .feat-img {
-    border: 0.1em solid #666666;
-    top: 0;
-    left: 0;
-    width: 87%;
-    margin: auto;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 47.2em;
+  border: 0.1em solid #666666;
+  top: 0;
+  left: 0;
+  width: 87%;
+  margin: auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 47.2em;
 }
 .img_1 {
   background-position: 50% 73%;
@@ -209,14 +209,76 @@ margin-right: auto;
   background-image: url('https://farm2.staticflickr.com/1578/25365360582_33e0a77ba6_o.png');
 }
 .img_3 {
-background-image: url('https://farm2.staticflickr.com/1582/25116351119_4ba8023e98_o.png');
+  background-image: url('https://farm2.staticflickr.com/1582/25116351119_4ba8023e98_o.png');
+}
+.img_expand {
+  text-decoration: none;
+  font-size: 5em;
+}
+
+.zmdi-arrow-right-top, .zmdi-arrow-left-bottom {
+  display: none !important;
+  text-decoration: none;
+  color: #FD6C70;
+}
+.zmdi-arrow-right-top {
+  margin-top: 1.5em;
+  margin-left: 1em;
+}
+.zmdi-arrow-left-bottom {
+  margin-right: 1em;
+}
+.img_1:hover {
+  opacity: .8;
+}
+.feat_1:hover .zmdi-arrow-right-top, .feat_1:hover .zmdi-arrow-left-bottom {
+  display: block !important;
+}
+
+.feat_1:hover a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em 3.7em;
+  margin: -2em -3.7em;
+}
+.img_2:hover {
+  opacity: .8;
+}
+.feat_2:hover .zmdi-arrow-right-top, .feat_2:hover .zmdi-arrow-left-bottom {
+  display: block !important;
+}
+
+.feat_2:hover a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em 3.7em;
+  margin: -2em -3.7em;
+}
+.img_3:hover {
+  opacity: .8;
+}
+.feat_3:hover .zmdi-arrow-right-top, .feat_3:hover .zmdi-arrow-left-bottom {
+  display: block !important;
+}
+
+.feat_3:hover a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em 3.7em;
+  margin: -2em -3.7em;
+}
+
+.img_expand:hover .zmdi {
 }
 /*.featured_img {
-  max-width: 590px;
-  margin-top: 1.5em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+max-width: 590px;
+margin-top: 1.5em;
+display: block;
+margin-left: auto;
+margin-right: auto;
 }*/
 .image_wrapper:hover .featured_img {
   opacity: .4;
