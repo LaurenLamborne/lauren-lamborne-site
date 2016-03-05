@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Lauren Lamborne</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.min.css" >
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+</head>
+<body ng-controller="HomeController">
+    <div id="content_wrapper">
+      <main id="main">
+        <div class="nav_wrapper nav_top">
+					<p class="box hello">hello</p>
+          <a class="box smoothScroll main_link_right" href="#about">about</a>
+        </div>
+        <div class="sticky head logo_wrapper">
+          <div class="box1">
+            <img class="logo_image" src="https://farm2.staticflickr.com/1711/25059228369_c3a37d1a19_o.png" alt="LLL" />
+          </div>
+          <div class="box2">
+            <h1>Lauren L Lamborne</h1>
+            <h2>Front-End Developer</h2>
+          </div>
+					<div class="hide travel_nav">
+						<ul>
+							<li>
+								<a class="travel_nav_link smoothScroll" ng-href="#about">about</a>
+							</li>
+							<li>
+								<a class="travel_nav_link smoothScroll" ng-href="#work">work</a>
+							</li>
+							<li>
+								<a class="travel_nav_link smoothScroll" ng-href="#connect">connect</a>
+							</li>
+							<li>
+								<a class="travel_nav_link_up smoothScroll" ng-href="#content_wrapper"><span class="nav_up"> <i class="zmdi zmdi-caret-up-circle"></i>
+								</span></a>
+							</li>
+						</ul>
+					</div>
+        </div>
+
+        <div class="nav_wrapper nav_bottom">
+					<a class="box smoothScroll" ng-href="#work">work</a>
+          <a class="box smoothScroll main_link_right" ng-href="#connect">connect</a>
+        </div>
+      </main>
+
+
+      <div id="content_container">
+
+				<section id="about">
+				</section>
+
+				<section name="work" id="work">
+          <div class="featured_work">
+            <div class="feat-wrap">
+              <div class="featured_wrapper feat_1">
+                <div class="feat-img img_1">
+                <a class="img_expand" href=""><i class="arrow-1 zmdi zmdi-arrow-right-top"></i><i class="arrow-1 zmdi zmdi-arrow-left-bottom"></i>
+              </a>
+            </div>
+          </div>
+          <div class="featured_wrapper feat_2">
+            <div class="feat-img img_2">
+              <a class="img_expand" href=""><i class="arrow-2 zmdi zmdi-arrow-right-top"></i><i class=" arrow-2 zmdi zmdi-arrow-left-bottom"></i>
+            </a>
+            </div>
+          </div>
+          <div class="featured_wrapper feat_3">
+            <div class="feat-img img_3">
+              <a class="img_expand" href=""><i class="arrow-3 zmdi zmdi-arrow-right-top"></i><i class="arrow-3 zmdi zmdi-arrow-left-bottom"></i>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="connect">
+    <div class="contact_wrap" ng-hide="sent">
+				<h3 class="contact_instructions">Drop Me A Line</h3>
+        <div class="contactDisplay">
+          <i class="zmdi zmdi-account-o"></i>
+          <span class="divider"> | </span>
+          <input type="text" placeholder="name" name="userName" ng-model="contact_field.name" required="true">
+        </div>
+        <div class="contactDisplay">
+          <i class="zmdi zmdi-email"></i>
+          <span class="divider"> | </span>
+          <input type="email" placeholder="email" name="email" ng-model="contact_field.email" required="true">
+        </div>
+        <div class="contactDisplay">
+          <i class="zmdi zmdi-edit"></i>
+          <span class="divider"> | </span>
+          <textarea placeholder="message" ng-model="contact_field.msg" rows="5" required="true"></textarea>
+        </div>
+        <div class="buttonDiv">
+          <md-button ng-click="sendMail()" type="button" class="md-raised" style="background-color: #F0EDEE; z-index: 1; position: relative;"
+          aria-label="Save Project">Send</md-button>
+        </div>
+    </div>
+    <div class="contact_wrap" ng-show="sent">
+      <div class="thanks">
+        <i class="zmdi zmdi-check-circle"></i>
+        Thank you! I will be in touch soon.
+      </div>
+    </div>
+		<div class="connect_side">
+			<a href="https://github.com/LaurenLamborne"><i class="zmdi zmdi-github-box"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/laurenlamborne"><i class="zmdi zmdi-linkedin-box"></i>
+			</a>
+			<a href="http://codepen.io/LaurenLamborne/"><i class="zmdi zmdi-codepen"></i>
+			</a>
+			<h4>email:<br>lauren<br>lamborne<br>@gmail<br>.com</h4>
+		</div>
+  </section>
+  </div>
+
+	<!-- Ext Libs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Angular Material -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-aria.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
+	<!-- Global Src -->
+	<script src="/app.js"></script>
+</body>
+</html>
