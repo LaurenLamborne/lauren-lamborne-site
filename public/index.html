@@ -9,21 +9,22 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
 </head>
-<body ng-controller="HomeController">
-    <div id="content_wrapper">
-      <main id="main">
-        <div class="nav_wrapper nav_top">
-					<p class="box hello">hello</p>
-          <a class="box smoothScroll main_link_right" href="#about">about</a>
-        </div>
-        <div class="sticky head logo_wrapper">
-          <div class="box1">
-            <img class="logo_image" src="https://farm2.staticflickr.com/1711/25059228369_c3a37d1a19_o.png" alt="LLL" />
-          </div>
-          <div class="box2">
-            <h1>Lauren L Lamborne</h1>
-            <h2>Front-End Developer</h2>
-          </div>
+<body>
+	<div ng-controller="HomeController">
+		<div id="content_wrapper">
+			<main id="main">
+				<div class="nav_wrapper nav_top">
+					<p class="nav_link welcome fade-in">welcome</p>
+					<a class="nav_link smoothScroll main_link_right" href="#about">about</a>
+				</div>
+				<div class="sticky head logo_wrapper">
+					<div class="logo_image_wrapper">
+						<img class="logo_image" src="./lll_logo1.png" alt="LLL" />
+					</div>
+					<div class="logo_text_wrapper">
+						<h1 class="name_text">Lauren L Lamborne</h1>
+						<h2 class="title_text">Front-End Developer</h2>
+					</div>
 					<div class="hide travel_nav">
 						<ul>
 							<li>
@@ -41,95 +42,98 @@
 							</li>
 						</ul>
 					</div>
-        </div>
+				</div>
 
-        <div class="nav_wrapper nav_bottom">
-					<a class="box smoothScroll" ng-href="#work">work</a>
-          <a class="box smoothScroll main_link_right" ng-href="#connect">connect</a>
-        </div>
-      </main>
+				<div class="nav_wrapper nav_bottom">
+					<a class="nav_link smoothScroll" ng-href="#work">work</a>
+					<a class="nav_link smoothScroll main_link_right" ng-href="#connect">connect</a>
+				</div>
+			</main>
 
-
-      <div id="content_container">
-
+			<div id="content_container">
 				<section id="about">
+					<div class="about_wrapper">
+						<h3 class="about_hello">Hello. </h3>
+						<p class="about_text1">
+							I'm Lauren, a developer located in Durham, North Carolina.
+						</p>
+						<p class="about_text2">
+							I have a passion for all things front-end and love creating engaging and thoughtful interfaces. I also have experience as a MEAN-stack developer and enjoy the unique satisfaction that comes from building applications from an idea to completion.
+						</p>
+						<p class="about_text3">
+							When I'm not knee-deep in code, I enjoy exploring my beautiful city and am most likely drinking or thinking about coffee.
+						</p>
+					</div>
 				</section>
 
-				<section name="work" id="work">
-          <div class="featured_work">
-            <div class="feat-wrap">
-              <div class="featured_wrapper feat_1">
-                <div class="feat-img img_1">
-                <a class="img_expand" href=""><i class="arrow-1 zmdi zmdi-arrow-right-top"></i><i class="arrow-1 zmdi zmdi-arrow-left-bottom"></i>
-              </a>
-            </div>
-          </div>
-          <div class="featured_wrapper feat_2">
-            <div class="feat-img img_2">
-              <a class="img_expand" href=""><i class="arrow-2 zmdi zmdi-arrow-right-top"></i><i class=" arrow-2 zmdi zmdi-arrow-left-bottom"></i>
-            </a>
-            </div>
-          </div>
-          <div class="featured_wrapper feat_3">
-            <div class="feat-img img_3">
-              <a class="img_expand" href=""><i class="arrow-3 zmdi zmdi-arrow-right-top"></i><i class="arrow-3 zmdi zmdi-arrow-left-bottom"></i>
-            </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+				<section id="work">
+					<div class="work_wrapper">
+						<div class="work_info_wrap">
+							<h4 class="work_info_title">Client:</h4>
+							<p class="work_info_content">LaTonya Yvette</p>
+							<h4 class="work_info_title">Role:</h4>
+							<p class="work_info_content">Front-End Developer</p>
+							<h4 class="work_info_title">Description:</h4>
+							<p class="work_info_content">
+								Est deserunt nominati ne, sea ad denique scribentur. Regione nonumes abhorreant duo et, ex est eligendi detraxit. Et duo postea ornatus elaboraret, elit deserunt adipiscing te vis</p>
+								<a class="work_link" target="_blank"  href="http://blog.latonyayvette.com/">Link</a>
+							</div>
+							<div class="work_image_wrap">
+								<img class="work_img1" src="https://farm2.staticflickr.com/1565/25475691062_52f5e8519f_o.png" alt="" />
+							</div>
+						</div>
+					</section>
 
-  <section id="connect">
-    <div class="contact_wrap" ng-hide="sent">
-				<h3 class="contact_instructions">Drop Me A Line</h3>
-        <div class="contactDisplay">
-          <i class="zmdi zmdi-account-o"></i>
-          <span class="divider"> | </span>
-          <input type="text" placeholder="name" name="userName" ng-model="contact_field.name" required="true">
-        </div>
-        <div class="contactDisplay">
-          <i class="zmdi zmdi-email"></i>
-          <span class="divider"> | </span>
-          <input type="email" placeholder="email" name="email" ng-model="contact_field.email" required="true">
-        </div>
-        <div class="contactDisplay">
-          <i class="zmdi zmdi-edit"></i>
-          <span class="divider"> | </span>
-          <textarea placeholder="message" ng-model="contact_field.msg" rows="5" required="true"></textarea>
-        </div>
-        <div class="buttonDiv">
-          <md-button ng-click="sendMail()" type="button" class="md-raised" style="background-color: #F0EDEE; z-index: 1; position: relative;"
-          aria-label="Save Project">Send</md-button>
-        </div>
-    </div>
-    <div class="contact_wrap" ng-show="sent">
-      <div class="thanks">
-        <i class="zmdi zmdi-check-circle"></i>
-        Thank you! I will be in touch soon.
-      </div>
-    </div>
-		<div class="connect_side">
-			<a href="https://github.com/LaurenLamborne"><i class="zmdi zmdi-github-box"></i>
-			</a>
-			<a href="https://www.linkedin.com/in/laurenlamborne"><i class="zmdi zmdi-linkedin-box"></i>
-			</a>
-			<a href="http://codepen.io/LaurenLamborne/"><i class="zmdi zmdi-codepen"></i>
-			</a>
-			<h4>email:<br>lauren<br>lamborne<br>@gmail<br>.com</h4>
-		</div>
-  </section>
-  </div>
+					<section id="connect">
+						<div class="connect_wrap" ng-hide="sent">
+							<h3 class="connect_instructions">Drop Me A Line</h3>
+							<div class="connectDisplay">
+								<i class="zmdi zmdi-account-o"></i>
+								<span class="divider"> | </span>
+								<input type="text" placeholder="name" name="userName" ng-model="contact_field.name" required="true">
+							</div>
+							<div class="connectDisplay">
+								<i class="zmdi zmdi-email"></i>
+								<span class="divider"> | </span>
+								<input type="email" placeholder="email" name="email" ng-model="contact_field.email" required="true">
+							</div>
+							<div class="connectDisplay">
+								<i class="zmdi zmdi-edit"></i>
+								<span class="divider"> | </span>
+								<textarea placeholder="message" ng-model="contact_field.msg" rows="5" required="true"></textarea>
+							</div>
+							<div class="buttonDiv">
+								<md-button ng-click="sendMail()" type="button" class="md-raised send_button" aria-label="Save Project">Send</md-button>
+							</div>
+						</div>
+						<div class="connect_wrap" ng-show="sent">
+							<div class="thanks">
+								<i class="zmdi zmdi-check-circle"></i>
+								Thank you! I will be in touch soon.
+							</div>
+						</div>
+						<div class="connect_side">
+							<a target="_blank" href="https://github.com/LaurenLamborne"><i class="zmdi side_icon zmdi-github-box"></i>
+							</a>
+							<a target="_blank" href="https://www.linkedin.com/in/laurenlamborne"><i class="zmdi side_icon zmdi-linkedin-box"></i>
+							</a>
+							<a target="_blank" href="http://codepen.io/LaurenLamborne/"><i class="zmdi side_icon zmdi-codepen"></i>
+							</a>
+							<h4>email:<br>lauren<br>lamborne<br>@gmail.com</h4>
+						</div>
+					</section>
+				</div>
+			</div>
 
-	<!-- Ext Libs -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- Angular Material -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-aria.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
-	<!-- Global Src -->
-	<script src="/app.js"></script>
-</body>
-</html>
+			<!-- Ext Libs -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<!-- Angular Material -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-aria.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
+			<!-- Global Src -->
+			<script src="/app.js"></script>
+		</body>
+		</html>

@@ -15,7 +15,9 @@ function ($scope, $http, HomeFactory, $mdToast) {
     });
   };
 
+
   $(window).scroll(function(){
+
     if ($(window).scrollTop() >= 706) {
       $('.sticky').addClass('fixed');
     }
@@ -34,7 +36,9 @@ function ($scope, $http, HomeFactory, $mdToast) {
     else {
       $('.hide').removeClass('show');
     }
+
   });
+
 
   $(function() {                       //run when the DOM is ready
     $(".img_expand").click(function() {  //use a class, since your ID gets mangled
