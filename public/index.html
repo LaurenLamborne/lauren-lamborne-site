@@ -51,89 +51,151 @@
 			</main>
 
 			<div id="content_container">
+
 				<section id="about">
 					<div class="about_wrapper">
-						<h3 class="about_hello">Hello. </h3>
-						<p class="about_text1">
-							I'm Lauren, a developer located in Durham, North Carolina.
-						</p>
-						<p class="about_text2">
-							I have a passion for all things front-end and love creating engaging and thoughtful interfaces. I also have experience as a MEAN-stack developer and enjoy the unique satisfaction that comes from building applications from an idea to completion.
-						</p>
-						<p class="about_text3">
-							When I'm not knee-deep in code, I enjoy exploring my beautiful city and am most likely drinking or thinking about coffee.
-						</p>
+						<div class="about_hands">
+							<img class="about_image" src="/hands.gif" alt="" />
+							<img class="about_image" src="/hands2.gif" alt="" />
+							<img class="about_image" src="/hands3.gif" alt="" />
+							<img class="about_image" src="/hands4.gif" alt="" />
+							<img class="about_image" src="/hands2.gif" alt="" />
+						</div>
+						<div class="about_content">
+							<h3 class="about_hello">Hello.</h3>
+							<p class="about_text1">I'm Lauren, a developer located in Durham, North Carolina.</p>
+							<p class="about_text2">I have a passion for all things front-end and love creating engaging and thoughtful interfaces. I also have experience as a MEAN-stack developer and enjoy the unique satisfaction that comes from building applications from an idea to completion.</p>
+							<p class="about_text3">When I'm not knee-deep in code, I enjoy exploring my beautiful city and am most likely drinking or thinking about coffee.</p>
+							</div>
 					</div>
 				</section>
 
 				<section id="work">
-					<div class="work_wrapper">
-						<div class="work_info_wrap">
-							<h4 class="work_info_title">Client:</h4>
-							<p class="work_info_content">LaTonya Yvette</p>
-							<h4 class="work_info_title">Role:</h4>
-							<p class="work_info_content">Front-End Developer</p>
-							<h4 class="work_info_title">Description:</h4>
-							<p class="work_info_content">
-								Est deserunt nominati ne, sea ad denique scribentur. Regione nonumes abhorreant duo et, ex est eligendi detraxit. Et duo postea ornatus elaboraret, elit deserunt adipiscing te vis</p>
-								<a class="work_link" target="_blank"  href="http://blog.latonyayvette.com/">Link</a>
+					<div class="work_wrapper work1">
+						<div class="testwrap">
+							<img class="test" src="/lt1.png" alt="" />
+						</div>
+						<div class="btnWrap" ng-show="show">
+							<button type="button" class="btn"  ng-click="show = !show" name="button">More</button>
+						</div>
+						<div class="btnWrap" ng-show="!show">
+							<button type="button" class="btn"  ng-click="show = !show" name="button">Less</button>
+							<div class="testwrap2">
+								<img class="test2" src="/lt2.png" alt="" />
 							</div>
-							<div class="work_image_wrap">
-								<img class="work_img1" src="https://farm2.staticflickr.com/1565/25475691062_52f5e8519f_o.png" alt="" />
+							<div class="testwrap">
+								<img class="test" src="/lt3.png" alt="" />
 							</div>
 						</div>
-					</section>
+					</div>
 
-					<section id="connect">
-						<div class="connect_wrap" ng-hide="sent">
-							<h3 class="connect_instructions">Drop Me A Line</h3>
-							<div class="connectDisplay">
-								<i class="zmdi zmdi-account-o"></i>
-								<span class="divider"> | </span>
-								<input type="text" placeholder="name" name="userName" ng-model="contact_field.name" required="true">
-							</div>
-							<div class="connectDisplay">
-								<i class="zmdi zmdi-email"></i>
-								<span class="divider"> | </span>
-								<input type="email" placeholder="email" name="email" ng-model="contact_field.email" required="true">
-							</div>
-							<div class="connectDisplay">
-								<i class="zmdi zmdi-edit"></i>
-								<span class="divider"> | </span>
-								<textarea placeholder="message" ng-model="contact_field.msg" rows="5" required="true"></textarea>
-							</div>
-							<div class="buttonDiv">
-								<md-button ng-click="sendMail()" type="button" class="md-raised send_button" aria-label="Save Project">Send</md-button>
-							</div>
-						</div>
-						<div class="connect_wrap" ng-show="sent">
-							<div class="thanks">
-								<i class="zmdi zmdi-check-circle"></i>
-								Thank you! I will be in touch soon.
-							</div>
-						</div>
-						<div class="connect_side">
-							<a target="_blank" href="https://github.com/LaurenLamborne"><i class="zmdi side_icon zmdi-github-box"></i>
-							</a>
-							<a target="_blank" href="https://www.linkedin.com/in/laurenlamborne"><i class="zmdi side_icon zmdi-linkedin-box"></i>
-							</a>
-							<a target="_blank" href="http://codepen.io/LaurenLamborne/"><i class="zmdi side_icon zmdi-codepen"></i>
-							</a>
-							<h4>email:<br>lauren<br>lamborne<br>@gmail.com</h4>
-						</div>
-					</section>
+					<div class="work_wrapper">
+						<!-- <div class="work_info_wrap">
+						<h4 class="work_info_title">Client:</h4>
+						<p class="work_info_content">LaTonya Yvette</p>
+						<h4 class="work_info_title">Role:</h4>
+						<p class="work_info_content">Front-End Developer</p>
+						<h4 class="work_info_title">Description:</h4>
+						<p class="work_info_content">
+						Est deserunt nominati ne, sea ad denique scribentur. Regione nonumes abhorreant duo et, ex est eligendi detraxit. Et duo postea ornatus elaboraret, elit deserunt adipiscing te vis</p>
+						<a class="work_link" target="_blank"  href="http://blog.latonyayvette.com/">Link</a>
+					</div>
+					<div class="work_image_wrap">
+					<img class="work_img1" src="https://farm2.staticflickr.com/1565/25475691062_52f5e8519f_o.png" alt="" />
 				</div>
 			</div>
+			<div class="work_wrapper"> -->
+			<div class="testwrap">
+				<img class="test" src="/ts4.png" alt="" />
+			</div>
+			<div class="btnWrap" ng-show="show2">
+				<button type="button" class="btn" ng-click="show2 = !show2" name="button">More</button>
+			</div>
+			<div class="btnWrap" ng-show="!show2">
+				<button type="button" class="btn" ng-click="show2 = !show2" name="button">Less</button>
+				<div class="testwrap">
+					<img class="test" src="/ps3.png" alt="" />
+				</div>
+				<div class="testwrapHalf">
+					<img class="half halfLeft" src="/ps1.png" alt="" />
+					<img class="half" src="/ps2.png" alt="" />
+				</div>
+				<div class="testwrap">
+					<img class="test" src="/ts1.png" alt="" />
+				</div>
+				<div class="testwrap">
+					<img class="test" src="/ts2.png" alt="" />
+				</div>
+			</div>
+			<!-- <div class="work_info_wrap">
+			<h4 class="work_info_title">Client:</h4>
+			<p class="work_info_content">John Shahabian</p>
+			<h4 class="work_info_title">Role:</h4>
+			<p class="work_info_content">Full-Stack Developer</p>
+			<h4 class="work_info_title">Description:</h4>
+			<p class="work_info_content">
+			Est deserunt nominati ne, sea ad denique scribentur. Regione nonumes abhorreant duo et, ex est eligendi detraxit. Et duo postea ornatus elaboraret, elit deserunt adipiscing te vis</p>
+			<a class="work_link" target="_blank"  href="http://blog.latonyayvette.com/">Link</a>
+		</div>
+		<div class="work_image_wrap">
+		<img class="work_img2" src="https://farm2.staticflickr.com/1578/25365360582_33e0a77ba6_o.png" alt="" />
+	</div> -->
+</div>
+</section>
 
-			<!-- Ext Libs -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-			<!-- Angular Material -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-aria.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
-			<!-- Global Src -->
-			<script src="/app.js"></script>
-		</body>
-		</html>
+<section id="connect">
+	<div class="connect_wrap" ng-hide="sent">
+		<h3 class="connect_instructions">Drop Me A Line</h3>
+		<div class="connectDisplay">
+			<i class="zmdi zmdi-account-o"></i>
+			<span class="divider"> | </span>
+			<input type="text" placeholder="name" name="userName" ng-model="contact_field.name" required="true">
+		</div>
+		<div class="connectDisplay">
+			<i class="zmdi zmdi-email"></i>
+			<span class="divider"> | </span>
+			<input type="email" placeholder="email" name="email" ng-model="contact_field.email" required="true">
+		</div>
+		<div class="connectDisplay">
+			<i class="zmdi zmdi-edit"></i>
+			<span class="divider"> | </span>
+			<textarea placeholder="message" ng-model="contact_field.msg" rows="5" required="true"></textarea>
+		</div>
+		<div class="buttonDiv">
+			<md-button ng-click="sendMail()" type="button" class="md-raised send_button" aria-label="Save Project">Send</md-button>
+		</div>
+	</div>
+	<div class="connect_wrap" ng-show="sent">
+		<div class="thanks">
+			<i class="zmdi zmdi-check-circle"></i>
+			Thank you! I will be in touch soon.
+		</div>
+	</div>
+	<div class="connect_side">
+		<a target="_blank" href="https://github.com/LaurenLamborne"><i class="zmdi side_icon zmdi-github-box"></i>
+		</a>
+		<a target="_blank" href="https://www.linkedin.com/in/laurenlamborne"><i class="zmdi side_icon zmdi-linkedin-box"></i>
+		</a>
+		<a target="_blank" href="http://codepen.io/LaurenLamborne/"><i class="zmdi side_icon zmdi-codepen"></i>
+		</a>
+		<h4>email:<br>lauren<br>lamborne<br>@gmail.com</h4>
+	</div>
+</section>
+</div>
+<h4 class="last"><i class="zmdi zmdi-favorite"></i>
+	Thank you for stopping by! <i class="zmdi zmdi-favorite"></i>
+</h4>
+</div>
+
+<!-- Ext Libs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Angular Material -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.4/angular-material.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-aria.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-animate.min.js"></script>
+<!-- Global Src -->
+<script src="/app.js"></script>
+</body>
+</html>

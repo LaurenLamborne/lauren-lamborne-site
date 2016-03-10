@@ -15,6 +15,9 @@ function ($scope, $http, HomeFactory, $mdToast) {
     });
   };
 
+  $scope.show=true;
+  $scope.show2=true;
+
 
   $(window).scroll(function(){
 
